@@ -463,7 +463,6 @@
     <property name="title">
      <string>&amp;Help</string>
     </property>
-    <addaction name="actionHelp"/>
     <addaction name="actionAbout"/>
    </widget>
    <addaction name="menuViewer"/>
@@ -712,19 +711,6 @@
   <action name="actionFocusLineEdit">
    <property name="text">
     <string>actionFocusLineEdit</string>
-   </property>
-  </action>
-  <action name="actionHelp">
-   <property name="icon">
-    <iconset theme="help-contents">
-     <normaloff/>
-    </iconset>
-   </property>
-   <property name="text">
-    <string>Help</string>
-   </property>
-   <property name="toolTip">
-    <string>Help</string>
    </property>
   </action>
   <action name="actionAlwaysOnTop">

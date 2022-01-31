@@ -53,8 +53,6 @@ _INCREMENTAL_LIMIT = 500
 _MAX_DELAY_UPDATE_INDEX = 100
 _INTERVAL_AUTO_PRON = 50
 _LOCAL_SCHEMES = frozenset(('dict', 'static', 'search', 'audio'))
-_HELP_PAGE_URL = "http://hakidame.net/ldoce5viewer/manual/"
-
 
 # Identifiers for lazy-loaded objects
 _LAZY_INCREMENTAL = 'incremental'
@@ -898,10 +896,6 @@ class MainWindow(QMainWindow):
     # Help
     #-------
 
-    def _onHelp(self):
-        webbrowser.open(_HELP_PAGE_URL)
-
-
     def _onAbout(self):
         self._ui.webView.load(QUrl('static:///documents/about.html'))
 
@@ -1022,7 +1016,6 @@ class MainWindow(QMainWindow):
             _set_icon(ui.actionZoomIn, 'zoom-in')
             _set_icon(ui.actionZoomOut, 'zoom-out')
             _set_icon(ui.actionNormalSize, 'zoom-original')
-            _set_icon(ui.actionHelp, 'help-contents')
             _set_icon(ui.actionAbout, 'help-about')
             _set_icon(ui.actionPrint, 'document-print')
             _set_icon(ui.actionPrintPreview, 'document-print-preview')
@@ -1139,7 +1132,6 @@ class MainWindow(QMainWindow):
             action.triggered.connect(slot)
 
         act_conn(ui.actionAbout, self._onAbout)
-        act_conn(ui.actionHelp, self._onHelp)
         act_conn(ui.actionCreateIndex, self._show_indexer_dialog)
         act_conn(ui.actionFindNext, self.findNext)
         act_conn(ui.actionFindPrev, self.findPrev)
@@ -1187,7 +1179,6 @@ class MainWindow(QMainWindow):
 
         # Shorcut keys
         ui.actionQuit.setShortcuts(QKeySequence.Quit)
-        ui.actionHelp.setShortcuts(QKeySequence.HelpContents)
         ui.actionFind.setShortcuts(QKeySequence.Find)
         ui.actionFindNext.setShortcuts(QKeySequence.FindNext)
         ui.actionFindPrev.setShortcuts(QKeySequence.FindPrevious)

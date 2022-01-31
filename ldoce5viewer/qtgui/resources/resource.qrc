@@ -17,7 +17,6 @@
     <file alias="go-previous24.png">icons/go-previous-24.png</file>
     <file alias="go-up.png">icons/go-up-16.png</file>
     <file alias="help-about.png">icons/help-about-16.png</file>
-    <file alias="help-contents.png">icons/help-contents-16.png</file>
     <file alias="icon.svg">ldoce5viewer.svg</file>
     <file alias="icon.png">ldoce5viewer.png</file>
     <file alias="reload.png">icons/reload-16.png</file>

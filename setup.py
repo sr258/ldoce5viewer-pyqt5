@@ -109,7 +109,7 @@ if 'name' not in extra_options:
 setup(
     version = __version__,
     description = 'LDOCE5 Viewer',
-    url = 'http://hakidame.net/ldoce5viewer/',
+    url = 'https://github.com/purboo/ldoce5viewer-pyqt5',
     license = 'GPLv3+',
     platforms='any',
     classifiers=[
@@ -121,7 +121,7 @@ setup(
         'Operating System :: OS Independent',
         'Topic :: Education',
         ],
-    author = 'Taku Fukada',
+    author = 'Taku Fukada and other contributors',
     author_email = 'naninunenor@gmail.com',
     package_dir = {'ldoce5viewer': 'ldoce5viewer'},
     packages = [

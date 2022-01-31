@@ -3,7 +3,7 @@
 
 from __future__ import unicode_literals, print_function
 
-__version__ = '2013.04.24'
-__author__ = 'Taku Fukada'
+__version__ = '2022.01.31'
+__author__ = 'Taku Fukada and other contributers'
 
 
